@@ -1,0 +1,114 @@
+/* 기본 스타일 */
+.browse-container {
+    text-align: center;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .browse-header {
+    background-color: #6e00ff;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .browse-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .browse-header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .features-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .feature {
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .feature img {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cta-section {
+    background-color: #f1f1f1;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-section p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #6e00ff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #5900cc;
+  }
+  
+  /* 반응형 미디어 쿼리 */
+  @media only screen and (max-width: 768px) {
+    .features-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .browse-header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .browse-header p,
+    .cta-section p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  }
+  

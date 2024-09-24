@@ -1,0 +1,82 @@
+.home-container {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .home-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .home-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* 화면 크기에 따라 줄바꿈 허용 */
+  }
+  
+  .login-button,
+  .browse-button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button {
+    background-color: #6e00ff;
+    color: white;
+  }
+  
+  .browse-button {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  .login-button:hover {
+    background-color: #5900cc;
+  }
+  
+  .browse-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* 반응형 미디어 쿼리 */
+  @media only screen and (max-width: 768px) {
+    .button-container {
+      flex-direction: column; /* 화면이 작아지면 버튼들을 세로로 배치 */
+      align-items: center;
+    }
+  
+    .login-button,
+    .browse-button {
+      width: 100%;
+      max-width: 300px; /* 버튼 크기 제한 */
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .home-container h1 {
+      font-size: 1.8rem;
+    }
+  
+    .home-container p {
+      font-size: 1rem;
+    }
+  
+    .login-button,
+    .browse-button {
+      width: 100%; /* 모바일 화면에서는 버튼을 전체 너비로 설정 */
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,66 @@
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* 텍스트와 버튼을 중앙 정렬 */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 버튼을 중앙으로 정렬 */
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    width: 100%; /* 입력 그룹을 전체 너비로 설정 */
+  }
+  
+  label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  input:focus {
+    border-color: #6e00ff;
+    outline: none;
+  }
+  
+  .login-button {
+    background-color: #6e00ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* 버튼을 전체 너비로 설정 */
+    max-width: 300px; /* 최대 너비 설정 */
+  }
+  
+  .login-button:hover {
+    background-color: #5900cc;
+  }
+  

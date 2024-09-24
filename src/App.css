@@ -1,0 +1,133 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; /* 줄바꿈을 방지 */
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* 링크들 사이의 간격 */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  white-space: nowrap; /* 줄바꿈 방지 */
+}
+
+.login {
+  background-color: #6e00ff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.login:hover {
+  background-color: #5900cc;
+}
+
+.logout-button {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 10px;
+  white-space: nowrap; /* 줄바꿈 방지 */
+}
+
+.logout-button:hover {
+  background-color: #cc0000;
+}
+
+/* Home Page and Other Pages Layout */
+.home-container,
+.page-container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+input, button {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+.login-form input,
+.login-form button {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 15px;
+}
+
+/* Responsive Media Queries */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px; /* 패딩을 줄여서 더 작은 화면에서도 대응 */
+  }
+
+  .nav-links {
+    gap: 10px; /* 작은 화면에서 간격을 줄임 */
+  }
+
+  .nav-links a, .logout-button, .login {
+    font-size: 0.9rem; /* 작은 화면에서 폰트 크기 조정 */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    padding: 8px; /* 더 작은 화면을 위해 패딩 줄이기 */
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .nav-links a, .logout-button, .login {
+    font-size: 0.8rem;
+    padding: 8px 12px; /* 작은 화면을 위한 버튼 크기 조정 */
+  }
+
+  .nav-links {
+    gap: 8px; /* 작은 화면에서 간격을 더 줄임 */
+  }
+
+  input, button {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .logout-button {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+}
